@@ -1,0 +1,60 @@
+package com.receita.SincronizacaoReceita.message;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ResponseMessage {
+	private List<Message> messages = null;
+	private List<FileInfo> fileInfos = null;
+	private Error error = null;
+	private String errStatus = "";
+	
+	public ResponseMessage() {
+		this.messages = new ArrayList<Message>();
+	}
+	
+	public ResponseMessage(List<FileInfo> fileInfos) {
+		this.fileInfos = fileInfos; 
+	}
+	
+	public ResponseMessage(String errStatus, Error err) {
+		this.errStatus = errStatus;
+		this.error = err;
+	}
+
+	public void addFileInfo(FileInfo file) {
+		this.fileInfos.add(file);
+	}
+	
+	public List<FileInfo> getFileInfos(){
+		return this.fileInfos;
+	}
+	
+	public void setMessages(List<Message> messages) {
+		this.messages =  messages;
+	}
+	
+	public List<Message> getMessages() {
+		return this.messages;
+	}
+	
+	public void addMessage(Message message) {
+		this.messages.add(message);
+	}
+	
+	public void setErrStatus(String status) {
+		this.errStatus = status;
+	}
+	
+	public String getErrStatus() {
+		return this.errStatus;
+	}
+	
+	public void setError(Error error) {
+		this.error = error;
+	}
+	
+	public Error getError() {
+		return this.error;
+	}
+}
