@@ -7,6 +7,7 @@ Aplicação desenvolvida com Springboot 2.4.4, jdk 1.8 e MySQL conexão jdbc.
 criar schema no MySQL com nome "receitadb" ou utilizar outro de sua preferência. Se utilizar outro, realizar a mudança do nome do db.
 
 #application.properties
+
 spring.datasource.url=jdbc:mysql://localhost:3306/receitadb
 spring.datasource.username=root
 spring.datasource.password=admin
