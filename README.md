@@ -1,5 +1,5 @@
 # SincronizacaoReceita
-Aplicação desenvolvida com springboot para fazer upload de arquivos em CSV em banco de dados SQL e
+Aplicação desenvolvida com springboot para fazer upload de arquivos em CSV em um banco de dados SQL e
 download do banco de dados em um novo arquivo CSV atualizado com os dados inseridos.
 
 Aplicação desenvolvida com Springboot 2.4.4, jdk 1.8 e MySQL conexão jdbc.
