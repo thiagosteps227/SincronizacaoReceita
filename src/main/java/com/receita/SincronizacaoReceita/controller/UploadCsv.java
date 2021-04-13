@@ -2,7 +2,6 @@ package com.receita.SincronizacaoReceita.controller;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
-import javax.xml.ws.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
