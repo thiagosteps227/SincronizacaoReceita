@@ -1,8 +1,6 @@
 package com.receita.SincronizacaoReceita.errorHandler;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.ws.Response;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -20,7 +18,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
     @SuppressWarnings({ "rawtypes", "unchecked" })
 	@ExceptionHandler(MultipartException.class)
     @ResponseBody
-    ResponseEntity<Response> handleControllerException(HttpServletRequest request, Throwable ex) {
+    ResponseEntity<ResponseBody> handleControllerException(HttpServletRequest request, Throwable ex) {
         HttpStatus status = getStatus(request);
         Error err = new Error("0x123", ex.getMessage());
         ResponseMessage res = new ResponseMessage("error", err);
