@@ -18,3 +18,5 @@ spring.jpa.generate-ddl=true
 
 Após rodar a aplicação como springboot app no IDE, 
 a aplicação estará disponível na URL http://localhost:8080/index.html
+
+Usar arquivo contas.csv como exemplo para inserir dados no banco de dados.
